@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
             int orange = 0;
             int blue = 0;
             int green = 0;
@@ -37,9 +36,24 @@
                     red++;
                 else
                 {
-                    time += 16 * red;
-                    time += ((orange / 7) + 1) * 13;
-
+                    time += (16 * red);
+                    if (orange != 0)
+                        time += ((orange / 7) + 1) * 13;
+                    if (blue != 0)
+                        time += ((blue / 7) + 1) * 13;
+                    if (green != 0)
+                        time += ((green / 7) + 1) * 13;
+                    if (yellow != 0)
+                        time += ((yellow / 7) + 1) * 13;
+                    if (pink != 0)
+                        time += ((pink / 7) + 1) * 13;
+                    if (violet != 0)
+                        time += ((violet/ 7) + 1) * 13;
+                    if (brown != 0)
+                        time += ((brown/ 7) + 1) * 13;
+                    Console.WriteLine(time);
+                    Console.WriteLine(red);
+                    Console.WriteLine(blue);
                     orange = 0;
                     blue = 0;
                     green = 0;
